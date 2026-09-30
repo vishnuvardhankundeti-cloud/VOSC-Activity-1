@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd or Even Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Odd or Even Game</h1>
+
+    <div class="game">
+
+        <h2>Player 1</h2>
+
+        <p>Select a number:</p>
+
+        <div class="numbers" id="player1Numbers">
+            <button onclick="selectNumber(1, 1)">1</button>
+            <button onclick="selectNumber(1, 2)">2</button>
+            <button onclick="selectNumber(1, 3)">3</button>
+            <button onclick="selectNumber(1, 4)">4</button>
+            <button onclick="selectNumber(1, 5)">5</button>
+            <button onclick="selectNumber(1, 6)">6</button>
+            <button onclick="selectNumber(1, 7)">7</button>
+            <button onclick="selectNumber(1, 8)">8</button>
+            <button onclick="selectNumber(1, 9)">9</button>
+            <button onclick="selectNumber(1, 10)">10</button>
+        </div>
+
+        <p>Choose:</p>
+
+        <button onclick="selectChoice(1, 'Odd')">Odd</button>
+        <button onclick="selectChoice(1, 'Even')">Even</button>
+<p id="player1Selected">Selected Number: None</p>
+<p id="player1Choice">Choice: None</p>
+        <hr>
+
+        <h2>Player 2</h2>
+
+        <p>Select a number:</p>
+
+        <div class="numbers" id="player2Numbers">
+            <button onclick="selectNumber(2, 1)">1</button>
+            <button onclick="selectNumber(2, 2)">2</button>
+            <button onclick="selectNumber(2, 3)">3</button>
+            <button onclick="selectNumber(2, 4)">4</button>
+            <button onclick="selectNumber(2, 5)">5</button>
+            <button onclick="selectNumber(2, 6)">6</button>
+            <button onclick="selectNumber(2, 7)">7</button>
+            <button onclick="selectNumber(2, 8)">8</button>
+            <button onclick="selectNumber(2, 9)">9</button>
+            <button onclick="selectNumber(2, 10)">10</button>
+        </div>
+
+        <p>Choose:</p>
+
+        <button onclick="selectChoice(2, 'Odd')">Odd</button>
+        <button onclick="selectChoice(2, 'Even')">Even</button>
+<p id="player2Selected">Selected Number: None</p>
+<p id="player2Choice">Choice: None</p>
+        <br><br>
+
+        <button onclick="playGame()">PLAY</button>
+
+        <h2 id="result"></h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
